@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Himanshu Sagar",
+            "username": "hsagarthegr8"
+        },
+        {
+            "id": 2,
+            "name": "Saurabh Gupta",
+            "username": "saugupta"
+        }
+    ]
+} 
