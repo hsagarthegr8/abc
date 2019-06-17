@@ -21,7 +21,6 @@ export const authReducer = (state = defaultState, action) => {
 			isLoggedIn: false
 		}
 	case FETCH_USER:
-		console.log(action)
 		return {
 			...state,
 			user: action.payload.user

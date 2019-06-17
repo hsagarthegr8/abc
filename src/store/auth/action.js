@@ -1,4 +1,4 @@
-import Api from "../../api";
+import Api from "../../api"
 
 export const LOGIN_SENT = 'LOGIN_SENT'
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
@@ -34,11 +34,11 @@ export const logOut = () => ({
 
 export const fetchUser = (id) => async dispatch => {
 	const api = Api()
-	const user = await api.get(`/users?id=${id}`)
+	const res = await api.get(`/users?id=${id}`)
 	const action = {
 		type: FETCH_USER,
 		payload: {
-			user
+			user: res.data[0]
 		}
 	}
 	dispatch(action)
